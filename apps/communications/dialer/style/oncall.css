@@ -55,6 +55,7 @@
   .grid {
     display:table;
     table-layout:fixed;
+    border:0;
   }
 
   .grid.hide {
@@ -211,15 +212,14 @@
   .co-advanced-option {
     height: 8rem;
     width: 100%;
-    background: rgba(24, 24, 24, 0.85);
-    border: solid 0.1rem black;
+    background: rgba(255, 255, 255, 0.85);
     border-left-color: rgba(255, 255, 255, 0.2);
     -moz-box-sizing: border-box;
     border-radius: 0;
   }
 
   .co-advanced-option:not([disabled]):active {
-    background: #00aacc;
+    background: #33cccc;
   }
 
 
@@ -251,23 +251,23 @@
   }
 
   .icon-mute {
-    background-image: url('images/ActionIcon_40x40_mute.png');
+    background-image: url('images/actionicon_activecall_mute.svg');
   }
 
   .icon-keypad-visibility {
-    background-image: url('images/ActionIcon_40x40_dialpad.png');
+    background-image: url('images/actionicon_activecall_dialpad.svg');
   }
 
   .icon-place-new-call {
-    background-image: url('images/ActionIcon_40x40_placenewcall.png');
+    background-image: url('images/actionicon_activecall_add_call.svg');
   }
 
   .icon-speaker {
-    background-image: url('images/ActionIcon_40x40_speaker.png') ;
+    background-image: url('images/actionicon_activecall_speaker.svg') ;
   }
 
   .icon-bt {
-    background-image: url('images/ActionIcon_40x40_audiosourcemenu.png');
+    background-image: url('images/actionicon_activecall_speaker.svg');
   }
 
   #callbar {
@@ -323,7 +323,7 @@
 
   #callbar-hang-up:active > .callbar-inner-button {
     background: url('images/ActionIcon_40x40_hangup.png') center / 4rem no-repeat,
-                #820000;
+                #de0000;
   }
 
   #callbar-answer > .callbar-inner-button {
@@ -333,7 +333,7 @@
 
   #callbar-answer:active > .callbar-inner-button {
     background: url('images/ActionIcon_40x40_pickup.png') center / 4rem no-repeat,
-                #4B780A;
+                #28c7bf;
   }
 
   #callbar-hold > .callbar-inner-button {
