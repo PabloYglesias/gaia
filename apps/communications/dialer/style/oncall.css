@@ -271,7 +271,7 @@
   }
 
   #callbar {
-    background: rgba(24, 24, 24, 0.85);
+    background: rgba(255, 255, 255, 0.85);
     border: solid 0.1rem rgba(255, 255, 255, 0.2);
     border-right-color: rgba(0, 0, 0, 0.4);
     border-bottom-color: rgba(0, 0, 0, 0.4);
@@ -310,7 +310,7 @@
     margin: 1rem .5rem 1.5rem .5rem;
 
     border: 0;
-    border-radius: .3rem;
+    border-radius: 2rem;
 
     background-size: auto 100%;
   }
@@ -444,7 +444,7 @@
   #calls.big-duration > section .numberWrapper,
   #calls.big-duration > section .additionalContactInfo,
   #calls.big-duration > section .switch-calls {
-    background: #01c5ed;
+    background: rgba(255,255,255,0.85);
     transition: background-color 0.3s linear;
   }
 
@@ -456,7 +456,7 @@
   #calls > section .numberWrapper .number {
     height: 2.5rem;
     padding: 2rem 0 0 0;
-    font-size: 2.5rem;
+    font-size: 3rem; /*2.5*/
     line-height: 1.5rem;
     color: black;
     white-space: nowrap;
@@ -493,7 +493,7 @@
     padding: 0 7rem 2rem 4rem;
     font-size: 1.6rem;
     line-height: 2rem;
-    color: white;
+    color: black;
   }
 
   #calls.big-duration > section .additionalContactInfo {
