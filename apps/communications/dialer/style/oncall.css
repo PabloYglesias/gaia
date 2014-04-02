@@ -562,7 +562,7 @@
   #calls.big-duration > section.ended .numberWrapper,
   #calls.big-duration > section.ended .additionalContactInfo,
   #calls.big-duration > section.ended .switch-calls {
-    background-color: rgba(28, 24, 24, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   #calls:not(.big-duration) > section.held {
