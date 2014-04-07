@@ -80,6 +80,7 @@ suite('Build Integration tests', function() {
   suiteSetup(function() {
     rmrf('profile');
     rmrf('profile-debug');
+    rmrf('build_stage');
     rmrf(localesDir);
   });
 
@@ -218,6 +219,19 @@ suite('Build Integration tests', function() {
 
       assert.equal(hsGalleryConfigJs, expectedScript,
         'Gallery config js is not expected');
+
+      var musicMetadataScriptPath = path.join(process.cwd(), 'build_stage',
+        'music', 'js', 'metadata_scripts.js');
+      assert.ok(fs.existsSync(musicMetadataScriptPath), 'metadata_scripts.js ' +
+        'should exist');
+      var galleryMetadataScriptPath = path.join(process.cwd(), 'build_stage',
+        'gallery', 'js', 'metadata_scripts.js');
+      assert.ok(fs.existsSync(galleryMetadataScriptPath),
+        'metadata_scripts.js should exist');
+      var galleryFrameScriptPath = path.join(process.cwd(), 'build_stage',
+        'gallery', 'js', 'frame_scripts.js');
+      assert.ok(fs.existsSync(galleryMetadataScriptPath),
+        'frame_scripts.js should exist');
       done();
     });
   });
@@ -300,9 +314,9 @@ suite('Build Integration tests', function() {
         'wifi.suspended': false,
         'font.default.x-western': 'sans-serif',
         'font.name.serif.x-western': 'Charis SIL Compact',
-        'font.name.sans-serif.x-western': 'Feura Sans',
+        'font.name.sans-serif.x-western': 'Fira Sans',
         'font.name.monospace.x-western': 'Source Code Pro',
-        'font.name-list.sans-serif.x-western': 'Feura Sans, Roboto',
+        'font.name-list.sans-serif.x-western': 'Fira Sans, Roboto',
         'extensions.autoDisableScopes': 0,
         'devtools.debugger.enable-content-actors': true,
         'devtools.debugger.prompt-connection': false,
@@ -377,9 +391,9 @@ suite('Build Integration tests', function() {
         'wifi.suspended': false,
         'font.default.x-western': 'sans-serif',
         'font.name.serif.x-western': 'Charis SIL Compact',
-        'font.name.sans-serif.x-western': 'Feura Sans',
+        'font.name.sans-serif.x-western': 'Fira Sans',
         'font.name.monospace.x-western': 'Source Code Pro',
-        'font.name-list.sans-serif.x-western': 'Feura Sans, Roboto',
+        'font.name-list.sans-serif.x-western': 'Fira Sans, Roboto',
         'docshell.device_size_is_page_size': true,
         'marionette.defaultPrefs.enabled': true,
         'nglayout.debug.disable_xul_cache': true,
@@ -507,5 +521,6 @@ suite('Build Integration tests', function() {
   teardown(function() {
     rmrf('profile');
     rmrf('profile-debug');
+    rmrf('build_stage');
   });
 });
