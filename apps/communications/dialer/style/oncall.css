@@ -250,7 +250,7 @@
   }
   /*when it's active*/
   .icon-mute {
-    background-image: url('images/actionicon_activecall_mute.svg');
+    background-image: url('images/actionicon_activecall_mute_40x80.svg');
   }
 
   .icon-keypad-visibility {
@@ -262,7 +262,7 @@
   }
 
   .icon-speaker {
-    background-image: url('images/actionicon_activecall_speaker.svg') ;
+    background-image: url('images/actionicon_activecall_speaker_40x80.svg') ;
   }
 
   .icon-bt {
