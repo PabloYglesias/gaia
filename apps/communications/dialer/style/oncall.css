@@ -16,10 +16,12 @@
 
   .font-light {
     font-weight: 300;
+    font-style: italic;
   }
 
   #calls:not(.big-duration) .duration .font-light {
     font-weight: normal;
+    font-style: italic;
   }
 
   button::-moz-focus-inner {
@@ -460,6 +462,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: lighter;
+    font-style: italic;
   }
 
   #calls > section:not(.additionalInfo) .numberWrapper
@@ -490,6 +493,7 @@
     padding: 0 7rem 2rem 4rem;
     font-size: 1.6rem;
     line-height: 2rem;
+    font-style: italic;
     color: black;
   }
 
@@ -562,6 +566,7 @@
   #calls.big-duration > section.ended .additionalContactInfo,
   #calls.big-duration > section.ended .switch-calls {
     background-color: rgba(255, 255, 255, 0.7);
+    color:white;
   }
 
   #calls:not(.big-duration) > section.held {
@@ -739,7 +744,7 @@
   }
 
   #group-call #group-show:active {
-    background-color: #00ABCC;
+    background-color: #33cccc;
     transition: background-color 0.2s ease;
   }
 
@@ -877,7 +882,6 @@
   #lockscreen-clock-time {
     margin: -0.6rem 0 -1rem -0.4rem;
     font-weight: 300;
-    border-top: solid 0.1rem rgba(255, 255, 255, 0.4);
     font-size: calc(26 * 0.226rem);
   }
 

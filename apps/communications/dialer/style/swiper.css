@@ -78,7 +78,7 @@
 }
 
 .lockscreen-icon-right > div {
-  background-image: url('images/pickup_icon.png');
+  background-image: url('images/actionicon_lockscreen_answer.svg');
 }
 
 .touched #lockscreen-icon-container {
