@@ -457,7 +457,7 @@
     padding: 2rem 0 0 0;
     font-size: 3rem; /*2.5*/
     line-height: 1.5rem;
-    color: black;
+    color: #333;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -494,7 +494,7 @@
     font-size: 1.6rem;
     line-height: 2rem;
     font-style: italic;
-    color: black;
+    color: #333;
   }
 
   #calls.big-duration > section .additionalContactInfo {
@@ -520,7 +520,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    color: black;
+    color: #333;
     line-height: 6.6rem;
   }
 
@@ -856,12 +856,12 @@
     top: calc(100% - 17.1rem);
     border-top: 0.1rem solid white;
     height: 7rem;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.85);
   }
 
   #call-screen[data-layout="incoming-locked"] #calls.big-duration .numberWrapper .number {
     width: calc(100% - 6rem);
-    color: #01c5ed;
+    color: #333;
     font-weight: normal;
   }
 
