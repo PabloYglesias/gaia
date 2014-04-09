@@ -327,7 +327,8 @@
   }
 
   #callbar-answer > .callbar-inner-button {
-    background: url('images/pickup.svg') center / 4rem no-repeat;
+    background: url('images/pickup.svg') center / 4rem no-repeat,
+                #33CCCC;
   }
 
   #callbar-answer:active > .callbar-inner-button {
@@ -687,7 +688,7 @@
 
   #incoming-answer {
     background-image: url('images/ActionIcon_40x40_hold.png'),
-                      url('images/btn_resume.png');
+                      #33cccc;
     background-size: 2.8rem, auto 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
