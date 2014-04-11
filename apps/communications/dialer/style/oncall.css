@@ -540,14 +540,14 @@
   }
 
   #calls:not(.big-duration) > section.incoming {
-    background-image: url('images/incoming-call.png');
+    background-image: url('images/actionicon_callscreen_incomingcall.svg');
     background-size: 1.6rem;
     background-position: center left 1.5rem;
     background-repeat: no-repeat;
   }
 
   #calls:not(.big-duration) > section.outgoing {
-    background-image: url('images/outgoing-call.png');
+    background-image: url('images/actionicon_callscreen_outgoingcall.svg');
     background-size: 1.6rem;
     background-position: center left 1.5rem;
     background-repeat: no-repeat;
@@ -561,8 +561,7 @@
   #calls.big-duration > section.ended .numberWrapper,
   #calls.big-duration > section.ended .additionalContactInfo,
   #calls.big-duration > section.ended .switch-calls {
-    background-color: rgba(255, 255, 255, 0.85);
-    color:white;
+    background-color: rgba(207, 64, 64, 0.9);
   }
 
   #calls:not(.big-duration) > section.held {
@@ -573,8 +572,10 @@
   }
 
   #calls > section.held .numberWrapper .number,
-  #calls > section.ended .numberWrapper .number {
-    color: white;
+  #calls > section.ended .numberWrapper .number,
+  #calls.big-duration > section.ended .additionalContactInfo,
+  #calls.big-duration > section.held .additionalContactInfo {
+    color: rgba(255,255,255,0.6);
   }
 
   #calls.big-duration > section.held .duration {
@@ -611,11 +612,13 @@
   }
 
   #calls.big-duration .handled-call.incoming .direction:before {
-    background-image: url('images/incoming_icon.png');
+    background-image: url('images/actionicon_callscreen_incomingcall.svg');
+    background-size: 3rem;
   }
 
   #calls.big-duration .handled-call.outgoing .direction:before {
-    background-image: url('images/outgoing_icon.png');
+    background-image: url('images/actionicon_callscreen_outgoingcall.svg');
+    background-size: 3rem;
   }
 
   #calls.big-duration .handled-call.held .direction:before {
@@ -849,7 +852,6 @@
   #call-screen[data-layout="incoming-locked"] #calls {
     position: absolute;
     top: calc(100% - 17.1rem);
-    border-top: 0.1rem solid white;
     height: 7rem;
     background: rgba(255, 255, 255, 0.85);
   }
