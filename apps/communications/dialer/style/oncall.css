@@ -171,7 +171,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 255, 255, 0.40);
     width: 100%;
     height: 100%;
   }
@@ -208,7 +208,6 @@
 
   #co-advanced {
     height: 8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .co-advanced-option {
@@ -273,9 +272,6 @@
 
   #callbar {
     background: rgba(255, 255, 255, 0.85);
-    border-right-color: rgba(0, 0, 0, 0.4);
-    border-bottom-color: rgba(0, 0, 0, 0.4);
-    border-left: 0;
     -moz-box-sizing: border-box;
   }
 
@@ -317,12 +313,12 @@
 
   #callbar-hang-up > .callbar-inner-button {
     margin: 1rem 0 1.5rem .5rem;
-    background: url('images/ActionIcon_40x40_hangup.png') center / 4rem no-repeat,
+    background: url('images/actionicon_activecall_hangup.svg') center / 4rem no-repeat,
                 #de0000;
   }
 
   #callbar-hang-up:active > .callbar-inner-button {
-    background: url('images/ActionIcon_40x40_hangup.png') center / 4rem no-repeat,
+    background: url('images/actionicon_activecall_hangup.svg') center / 4rem no-repeat,
                 #de0000;
   }
 
@@ -341,7 +337,6 @@
 
     color: #333;
     text-align: center;
-    text-shadow: 0.1rem 0.1rem 0 rgba(255,255,255,0.3);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 4rem;
@@ -416,7 +411,7 @@
     border: 0;
     position: relative;
     top: calc(50% - 2rem);
-    border-radius: .3rem;
+    border-radius: 2rem;
     background: url('images/ActionIcon_40x40_switchlines.png'),
                 url('images/btn_switchlines.png');
     background-size: 4rem, auto 100%;
@@ -566,7 +561,7 @@
   #calls.big-duration > section.ended .numberWrapper,
   #calls.big-duration > section.ended .additionalContactInfo,
   #calls.big-duration > section.ended .switch-calls {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     color:white;
   }
 
@@ -659,11 +654,12 @@
 
   #incoming-info {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.85);
-    background-image:  url('images/incoming_icon.png');
+    background-color: rgba(255, 255, 255, 0.85);
+    background-image:  url('images/actionicon_activecall_incomingcall.svg');
     background-position: top 1.5rem right 1.5rem;
     background-repeat: no-repeat;
     background-size: 2.2rem;
+    color: #333;
   }
 
   #incoming-container.displayed {
@@ -674,7 +670,7 @@
     height: 4rem;
     flex: 1;
     border:0;
-    border-radius:.3rem;
+    border-radius:2rem;
     display: block;
     font-size: 1.8rem;
     color: white;
@@ -682,20 +678,19 @@
     background-repeat: no-repeat, repeat-x;
   }
 
-  #incoming-container.hold-and-answer-only #incoming-end {
+  #incoming-container.hold-and-answer-only #incoming-end{
     display: none;
   }
 
   #incoming-answer {
-    background-image: url('images/ActionIcon_40x40_hold.png'),
+    background-image: url('images/actionicon_activecall_hold.svg'),
                       #33cccc;
-    background-size: 2.8rem, auto 100%;
+    background-size: 4rem, auto 100%;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   #incoming-end {
-    background: url('images/ActionIcon_40x40_hangup.png'),
+    background: url('images/actionicon_activecall_hangup.svg'),
                 #de0000;
     background-size: 4rem, auto 100%;
     margin-left: 1.5rem;
@@ -704,7 +699,6 @@
   .incoming-number-info {
     padding: 1rem 4.5rem 0 1.5rem;
     height: 7rem;
-    border-bottom: 0.1rem #333030 solid;
     display: flex;
     flex-direction: column;
   }
@@ -725,7 +719,7 @@
   }
 
   #incoming-ignore {
-    background: linear-gradient(to top, #424040 1%, #676767 100%);
+    background-color: #333;
     margin: 1rem 1.5rem;
     width: calc(100% - 3rem);
   }
@@ -777,7 +771,7 @@
     float: right;
     width: 4.5rem;
     height: 4.5rem;
-    background: url(images/ActionIcon_40x40_hangup.png) no-repeat center center / 4rem;
+    background: url(images/actionicon_activecall_hangup.svg) no-repeat center center / 4rem;
   }
 
   #contact-background {
