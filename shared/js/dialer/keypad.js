@@ -67,8 +67,8 @@ DtmfTone.kShortToneLength = 120;
 
 var KeypadManager = {
 
-  _MAX_FONT_SIZE_DIAL_PAD: 18,
-  _MAX_FONT_SIZE_ON_CALL: 16,
+  _MAX_FONT_SIZE_DIAL_PAD: 4.1,
+  _MAX_FONT_SIZE_ON_CALL: 3.4,
 
   _phoneNumber: '',
   _onCall: false,
@@ -159,12 +159,10 @@ var KeypadManager = {
     // to the font-size property of the body element.
     var defaultFontSize = window.getComputedStyle(document.body, null)
                                 .getPropertyValue('font-size');
-    this.minFontSize = parseInt(parseInt(defaultFontSize) * 10 * 0.226);
+    this.minFontSize = parseInt(defaultFontSize);
     this.maxFontSize = this._onCall ?
-      parseInt(parseInt(defaultFontSize) * this._MAX_FONT_SIZE_ON_CALL *
-        0.226) :
-      parseInt(parseInt(defaultFontSize) * this._MAX_FONT_SIZE_DIAL_PAD *
-        0.226);
+      parseInt(parseInt(defaultFontSize) * this._MAX_FONT_SIZE_ON_CALL) :
+      parseInt(parseInt(defaultFontSize) * this._MAX_FONT_SIZE_DIAL_PAD);
 
     this.phoneNumberView.value = '';
     this._phoneNumber = '';

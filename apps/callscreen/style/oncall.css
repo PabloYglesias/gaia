@@ -445,7 +445,7 @@
 
   #calls > section .numberWrapper .number {
     height: 2.5rem;
-    padding: 2rem 0 0 0;
+    padding: 2.5rem 0 0 0;
     font-size: 3rem;
     line-height: 1.5rem;
     color: #333;
@@ -457,9 +457,9 @@
 
   #calls > section:not(.additionalInfo) .numberWrapper
     .number {
-    height: 8rem;
+    height: 10rem;
     line-height: 8rem;
-    padding: 0;
+    padding: 2rem 0 0 0;
   }
 
   #calls.switch > section .numberWrapper .number {
